@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Netsecop • Security in the cloud</title>
+        <meta charset="utf-8">
+        
+        <!--<meta name="description" content="" />
+        <meta name="keywords" content="<%=keywords%>" />
+        <meta property="fb:app_id" content="1510307549288852">
+        <meta property="og:type" content="article" /> 
+        <meta property="og:url" content="<%=replace(replace(Request.ServerVariables("QUERY_STRING"),"404;",""),":80","")%>?fbrefresh=CAN_BE_ANYTHING" />
+        <meta property="og:title" content="<%=pagetitle%>" />
+        <meta property="og:image" content="http://www.osym.gov.tr/files/images/logo-200x200.png" />
+        <meta property="og:description" content="" />-->
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="files/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="files/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="files/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="files/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="files/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="files/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="files/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="files/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="files/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="files/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="files/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="files/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="files/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="files/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="files/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="files/css/preloader.css">
+        <link rel="stylesheet" href="files/css/bootstrap.css">
+		<link rel="stylesheet" href="files/css/bootstrap-select.css">
+        <link rel="stylesheet" href="files/css/general.css">
+        <link rel="stylesheet" href="files/css/responsive.css">
+        <link rel="stylesheet" href="files/js/dist/vis.css">
+        <link rel="stylesheet" href="files/css/jscroll-pane.css">
+		<!--<script src="http://malsup.github.com/jquery.form.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="files/js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="files/js/bootstrap.js"></script>
+		<script src="files/js/bootstrap-select.js"></script>
+        <script src="files/js/jquery.mobile.custom.min.js"></script>
+		<!--<script src="files/js/jquery.min.js"></script>
+		<script src="files/js/jquery.mousewheel.min.js"></script>
+		<script src="files/js/jScrollPane-1.2.3.min.js"></script>-->
+        <script>
+		$(document).ready(function() {
+			$("#myCarousel").swiperight(function() {
+				$("#myCarousel").carousel('prev');
+			});
+			$("#myCarousel").swipeleft(function() {
+				$("#myCarousel").carousel('next');
+			});
+		});
+		</script>
+        <!--<script type="text/javascript">
+            $(function(){
+                // this initialises the demo scollpanes on the page.
+                $('#pane').jScrollPane({showArrows:true});
+            });
+        </script>-->
+
+        <!--[if gte IE 9]
+        <style type="text/css">
+        .gradient {
+        filter: none;
+        }
+        </style>
+        <![endif]-->
+    </head>
+    <body class="main-page" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+		<!-------------------------------- header -------------------------------->
+        <div class="color-bar"></div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-top">
+            	<div class="tab-open-button"></div>
+                <div class="container-fluid">
+                    <ul>                              
+                        <li><a href="#"><span class="glyphicon glyphicon-try"></span>Try Netsecop!</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-login"></span>Login</a></li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-search"></span>Search</a>
+                            <label>
+                                <input type="text" placeholder="Enter keyword(s).."><input type="submit" value="" class="btn btn-default">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>                            
+            <div class="navbar-header">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#myPage"><div class="logo"><img src="files/images/netsecop-logo.png" title="Netsecop • Security in the cloud" width="478" height="59"></div></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">                            
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Home</a></li>
+                        <li><a href="#">What is Netsecop?</a></li>
+                        <li class="active dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Services</a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">365 WebSecurity Suite</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">365 NetMonitor Suite</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Network malware analysis and removal</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Cyber incident response</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Web application pentesting</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Website malware analysis</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Mobile Application Security Testing (AST)</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Static Application Security Testing (SAST)</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Security Configuration Audit</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Network pentesting</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">DoS attack simulation</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Advanced perimeter security testing</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Red teaming</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Forensics analysis and data recovery</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">APT analysis</a></li> 
+                                <li><a href="#" data-title="Network malware analysis and removal" data-desc="We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...">Social engineering</a></li> 
+                                <li class="call"><span>Questions?</span><span><strong>Call us at 1-800-745-4355</strong></span><a href="#">Global Contacts</a></li>
+                                <li class="detail"><h3>Network malware analysis and removal</h3><p>We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the...</p><a href="#">LEARN MORE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<!-------------------------------- header -------------------------------->
+
+
+		<!-------------------------------- main -------------------------------->
+        <div class="sub">
+        
+        	<div class="row content">
+            
+            	<div class="title">
+                	<a href="#" class="btn btn-info home">Home Page</a>
+                    <h1>Our Services </h1>
+                    <div class="share">
+                    	<span>SHARE</span>
+                    	<a href="#"><img src="files/images/icons/share-facebook.png" width="29" height="29"></a>
+                    	<a href="#"><img src="files/images/icons/share-twitter.png" width="29" height="29"></a>
+                    	<a href="#"><img src="files/images/icons/share-googleplus.png" width="29" height="29"></a>
+                    	<a href="#"><img src="files/images/icons/share-linkedin.png" width="29" height="29"></a>
+                    </div>
+                </div>
+
+                <div class="container">
+                	<div class="col-sm-12">
+                        <h2>Our Services</h2>
+                        <h3>24/7 AUTOMATIC MALWARE MONITORING TO RED TEAMING SERVICE</h3>
+                        <table>
+                            <tr>
+                                <td class="col-sm-4">365 WebSecurity Suite</td>
+                                <td class="col-sm-8">365 Websecurity suite has four subscription packages including Daily malware scanning, backdoor scanning, compromise monitoring, file change monitoring services. Periodical vulnerability scanning, 24/7 monitor that is dedicated for your brand protection. SecureBiz and SecureEnterprise packages have protection services that compose of consultancy based remote malware cleaning, blacklist  removal and hack removal.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">365 NetMonitor Suite</td>
+                                <td class="col-sm-8">365 NetMonitor suite is agent-based solution for dedicated to servers in internal and external networks. The core focus of NetMonitor Suite is to detect anomalies during cyber incidents. It alerts CPU, memory, HDD, traffic, port, service and user account anomalies.  NetMonitor Suite has a machine learning algoritm by which it detects anomalies while eliminating false positives.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Network malware analysis and removal</td>
+                                <td class="col-sm-8">If you suspicious of malware in your network, if there is slowdowns and unexpected behaviours, please contact us. Out experienced experts will connect over secured VPN to your networks. They will analyze suspicious files, e-mail attachments, hard drives, smartphones, USB thumb-drives etc. They will find the malware and clean the suspicious files from the servers and workstations. A detailed report is delivered to you after the analysis. In that report, the type, the capabilities, the potential harm-level and the possible infection methods of the malware will be detailed.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Cyber incident response</td>
+                                <td class="col-sm-8">We help companies that are under attack or are suspicious of being attacked. Incident response is a challenging task that requires specialization. Because experts have to ensure the system stability without damaging the integrity of the evidences. In cyber incident response, we response to the attacks, apply necessary countermeasures to the systems, and collect evidences.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Web application pentesting</td>
+                                <td class="col-sm-8">We perform pentesting of web applications. We check common vulnerabilities like cross site scripting and SQL injection. We also detect and eliminate false positives. The platform and the technology on that web applications are built on does not matter for our experts. Our experts make pentest specialized to WordPress, Joomla and Drupal. We cover OWASP top ten security controls for web application.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Website malware analysis</td>
+                                <td class="col-sm-8">We check thoroughly the content of your website by using a number of different methods including but not limited to hash control, iframe control, content parsing and check, popup checks, redirection checks, and traffic anomalies. We send e-mail and text alerts if your website is changed/infected by malware or it has suscpicious behaviours.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Mobile Application Security Testing (AST)</td>
+                                <td class="col-sm-8">We perform mobile application pentesting for your Apple and Android application. We make mobile pentest for not only the application in play store/app store but also in production. Our mobile penetration testers' checks include but not limited to insecure data storage, data leakage and information disclosure, reverse engineering, insecure log file configurations.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Static Application Security Testing (SAST)</td>
+                                <td class="col-sm-8">Our experts perform Static Application Security Testing (SAST) for your web and mobile applications. We review code by makine technical controls regarding authentication, authorization, session management, input validation, error handling, Buffer Overruns and Overflows, SQL injection, data validation, cross-site scripting, logging-requests etc. We perform our source code analysis according to the OWASP Code Review Guide.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Security Configuration Audit</td>
+                                <td class="col-sm-8">We perform security configuration audits of your internal/external assets including but not limited to database servers, web servers, firewalls, switches. We use our own checklists produced by the help of well known checklists like Center for Internet Security (CIS) Security audit checklist and NIST checklists. We score the vulnerabilities according to Common Vulnerability Scoring System (CVSS). Password security is one of the area of expertise of Netsecop. Netsecop deploys dictionary based and brute force password attacks without locking your user accounts. We perform compliant security audit. We also make comprehensive firewall configuration and ruleset check with detailed result documentations.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-4">Network pentesting</td>
+                                <td class="col-sm-8">We penetrate into your on-premise or cloud-based computer networks. Penetration tests are initiated from the Internet through your networks. So, the possibility of damages and breaches caused by external threats are assessed. At the second step, our experts are connected to your specified workstation over secured VPN connection by using user rights. So, the capabilities of internal/insider threats are assessed. Our network penetration tests covers databases, web servers, e-mail service, DNS service, wireless access points, VoIP systems, security devices/software (Firewall, IDS, IPS etc.), switches, routers, Windows and Linux servers.</td>
+                            </tr>
+                        </table>
+                    </div>
+                	<div class="col-sm-12">
+                        <a href="#" class="btn btn-info orange">SAVE THOUSANDS WITH $9.90!</a>
+                    </div>
+                </div>
+                
+            </div>
+        	
+        </div>
+		<!-------------------------------- main -------------------------------->
+
+
+		<!-------------------------------- footer -------------------------------->
+        <div class="contact-info">
+            <div class="info">
+                <a href="#"><img src="files/images/netsecop-logo-none-title.png" width="314" height="59"></a>
+                <span>
+                    <a href="#" class="free-trial-button">
+                        <strong>Start Your Free Trial</strong>
+                        There's nothing to install
+                    </a>
+                    <div class="ci"><a href="#">Contact sales</a> or call us at <strong>+1 800 444 4444</strong><br />or try our <a href="#">Global Contacts</a></div>
+                </span>
+            </div>
+        </div>
+        <footer>
+            <div class="sitemap">
+
+                <ul>
+                    <li class="footer-item">
+                        <h5>SITE MAP</h5>
+                        <ul>
+                        <li><a href="#">Home</a></li>
+                            <li><a href="#">What is Netsecop?</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-item">
+                        <h5>SERVICES</h5>
+                        <ul>
+                        <li><a href="#">365 WebSecurity Suite</a></li> 
+                            <li><a href="#">365 NetMonitor Suite</a></li> 
+                            <li><a href="#">Network malware analysis and removal</a></li> 
+                            <li><a href="#">Cyber incident response</a></li> 
+                            <li><a href="#">Web application pentesting</a></li> 
+                            <li><a href="#">Website malware analysis</a></li> 
+                            <li><a href="#">Mobile Application Security Testing (AST)</a></li> 
+                            <li><a href="#">Static Application Security Testing (SAST)</a></li> 
+                            <li><a href="#">Security Configuration Audit</a></li> 
+                            <li><a href="#">Network pentesting</a></li> 
+                            <li><a href="#">DoS attack simulation</a></li> 
+                            <li><a href="#">Advanced perimeter security testing</a></li> 
+                            <li><a href="#">Red teaming</a></li> 
+                            <li><a href="#">Forensics analysis and data recovery</a></li> 
+                            <li><a href="#">APT analysis</a></li> 
+                            <li><a href="#">Social engineering</a></li> 
+                        </ul> 
+                    </li>
+                    <li class="footer-item">
+                        <h5>RESOURCES</h5>
+                        <ul>
+                        <li><a href="#">Blog</a></li> 
+                            <li><a href="#">Videos</a></li> 
+                        </ul>
+                    </li>
+                    <li class="footer-item">
+                        <h5>ABOUT</h5>
+                        <ul>
+                        <li><a href="#">Leadership</a></li> 
+                            <li><a href="#">Team</a></li> 
+                            <li><a href="#">Partners</a></li> 
+                            <li><a href="#">Contact</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+                <span><a href="#">Terms & Conditions</a> | <a href="#">Prıvacy Policy</a> | <a href="#">Cookie Policy</a></span>
+
+            </div>
+            <div class="copyright">
+                <span>Copyright © 2016 Netsecop</span> • Network Security Operations, all right reserved. UX Design and Developed by <a href="http://www.merkurdesign.com" target="_blank" title="Creative deasign and developed by Merkur Design">Merkur Design</a>
+                <ul class="socials">
+                    <li class="facebook"><a href="#"><img src="files/images/icons/facebook.png" width="24" height="24"></a></li>
+                    <li class="twitter"><a href="#"><img src="files/images/icons/twitter.png" width="24" height="24"></a></li>
+                    <li class="googleplus"><a href="#"><img src="files/images/icons/googleplus.png" width="24" height="24"></a></li>
+                    <li class="linkedin"><a href="#"><img src="files/images/icons/linkedin.png" width="24" height="24"></a></li>
+                </ul>
+			</div>
+        </footer>
+		<!-------------------------------- footer -------------------------------->
+		<script src="files/js/main.js" type="text/javascript"></script>
+
+    </body>
+</html>

@@ -1,0 +1,348 @@
+﻿
+@media (max-width: 1024px) {
+	
+	.logo span,
+	.main .exams .nav-tabs li:last-child,
+	.main .col-sm-12.head,
+	.main .exams .tab-pane .info,
+	.timeline ul::before,
+	.timeline ul li.active::before,
+	.timeline ul li.active::after,
+	.timeline ul li:first-child::before,
+	.timeline ul li::before,
+	footer ul,
+	.main .exams .item-detail .documents h4,
+	.title .search-title,
+	.row.head,
+	.content .col-sm-3 .item:first-child,
+	.calendar-month-title,
+	.calendar-main .col-sm-2
+	{
+		display:none !important;
+	}
+
+	.navbar-nav > li.call {
+		padding-right:0px;
+	}
+	.navbar-top {
+		position: fixed;
+		background-color: #FFF;
+		z-index: 999;
+		height: 0px;
+		overflow-x: hidden;
+		transition: .2s;
+	}
+	.navbar-top {
+		width:100% !important;
+	}
+	.navbar-top {
+		height: 0px;
+	}
+	.navbar-top ul {
+		width:100%;
+	}
+		.navbar-top ul li {
+			width:100%;
+			border-bottom:1px solid rgba(0,0,0,0.05);
+		}
+			.navbar-top a {
+				padding:10px !important;
+			}
+			.navbar-top ul li a {
+				margin-left: 10px !important;
+				padding:5px 8px !important;
+			}
+			.navbar-top ul li.lang a {
+				font-size:12px !important;
+				height:auto !important;
+				line-height:normal !important;
+				padding-left: 0px !important;
+			}
+		/*.navbar-top .date,
+		.navbar-top ul li::after,
+		.navbar-top ul li::after,
+		a.tooltips span:after
+		{
+			display:none;
+		}*/
+		.navbar-top input[type=text] {
+			width: 77%;
+			border: 0 !important;
+			padding-left: 10px;
+		}
+		.navbar-top input[type=submit] {
+			width: 19%;
+			border: 0 !important;
+		}
+		.navbar-top .tab-open-button {
+			content: "";
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-color: #FFF;
+			top: 0px;
+			right: 0px;
+			background: url(../../images/icons/arrow5.png) no-repeat center center #f08221;
+			cursor:pointer;
+			transition: .1s;
+			-webkit-border-bottom-right-radius: 6px;
+			-webkit-border-bottom-left-radius: 6px;
+			-moz-border-radius-bottomright: 6px;
+			-moz-border-radius-bottomleft: 6px;
+			border-bottom-right-radius: 6px;
+			border-bottom-left-radius: 6px;
+		}
+		.navbar-top.tab-active .tab-open-button {
+			top: 206px;
+		}
+		
+	.logo img {
+		width:90px;
+		height:auto;
+	}
+	
+	.navbar .container-fluid {
+		padding: 0 26px;
+	}
+	.navbar {
+		height:92px;
+	}
+	.navbar-toggle {
+		margin-top:31px;
+	}
+	.navbar-collapse {
+		background-color:#FFF;
+	}
+	.navbar-nav .open .dropdown-menu {
+		background-color:#f08221;
+		position:relative;
+		float:left;
+	}
+		.navbar-nav .open .dropdown-menu li {
+			width:100%;
+			border-right:0px !important;
+		}
+	.main {
+		margin-top: 92px;
+	}
+		.main .exams .nav-tabs li {
+			width:50%;
+		}
+			.main .exams .nav-tabs li a {
+				padding: 0 8px;
+			}
+	.main .col-sm-2,
+	.main .col-sm-3,
+	.main .col-sm-4
+	{
+		width:100% !important;
+	}
+	.col-sm-7,
+	.col-sm-5
+	{
+		width:100%;
+	}
+	.main .exams .tab-pane {
+		height:auto;
+		/*padding-bottom: 48px;*/
+		display: inline-block;
+		width: 100%;
+	}
+	.main .news {
+		height:auto;
+		margin: 0 15px;
+	}
+		.main .news .archive {
+			width:93%;
+		}
+	.timeline ul li {
+		width: 76%;
+	}
+	.exam-calender a.all {
+		float: left;
+		padding: 6px 47px 6px 20px;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	.links li {
+		width:100% !important;
+		margin:0 0 10px 0 !important;
+		opacity:1 !important;
+	}
+	.links li h2 {
+		font-size:18px !important;
+		color:#93877d !important;
+		opacity:1 !important;
+	}
+	.links li p {
+		opacity:1 !important;
+		display:block !important;
+	}
+	.links .glyphicon {
+		width:125px !important;
+		height:125px !important;
+		margin-left: -62.5px !important;
+	}
+	.main .exams .item-detail .col-sm-6 {
+		width:100%;
+	}
+	.main .exams .item-detail .col-sm-5,
+	.main .exams .item-detail .col-sm-7
+	{
+		text-align:center;
+	}
+	.main .exams .item-detail.active {
+		height:112%;
+	}
+	.main .exams .item-detail .documents div li {
+		position:relative;
+	}
+		.main .exams .item-detail .documents div li a .glyphicon {
+			right: 0px;
+			position: absolute;
+		}
+	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width:100%;
+	}
+	.coordinators .table div {
+		width:100% !important;
+		display:inline-block !important;
+		padding:5px !important;
+	}
+	.coordinators .table .head .col-sm-2,
+	.coordinators .table .head .col-sm-3
+	{
+		padding:5px;
+		border:0 !important;
+		display:inline-block !important;
+	}
+	.coordinators .row .col-sm-2, .coordinators .row .col-sm-3 {
+		border:0 !important;
+	}
+	.coordinators .table .row.head {
+		display:none !important;
+	}
+	.title h1 {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.content .col-sm-9 {
+		padding:0 10px;
+		width:100%;
+	}
+	.calendar-main .col-sm-12 {
+		background-color:transparent !important;
+	}
+	.calendar-title {
+		margin-right:8px;
+	}
+	.calendar-title a {
+	    padding: 0 30px !important;
+	}
+	.calendar-main .col-sm-10 {
+		width:100% !important;
+	}
+
+}
+@media (max-width: 600px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 768px) {
+	.logo span,
+	.main .exams .nav-tabs li:last-child,
+	.main .col-sm-12.head,
+	.main .exams .tab-pane .info,
+	.timeline ul::before,
+	.timeline ul li.active::before,
+	.timeline ul li.active::after,
+	.timeline ul li:first-child::before,
+	.timeline ul li::before,
+	footer ul,
+	.main .exams .item-detail .documents h4,
+	.call
+	{
+		display:none !important;
+	}
+	.navbar-nav > li > a, .navbar-nav > li.call {
+		font-size: 20px;
+		padding: 0px 13px;
+		line-height: 56px;
+	}
+	.col-sm-7,
+	.col-sm-5
+	{
+		width:100%;
+	}
+	.main .news {
+		margin:10px 0;
+	}
+	.navbar-nav .open .dropdown-menu {
+		position:absolute;
+	}
+	.row.head {
+		display:none !important;
+	}
+	.content .col-sm-9 {
+		width:100%;
+	}
+	.calendar-main .col-sm-10 {
+		width:100%;
+		padding:0;
+		overflow-x:auto;
+	}
+	.calendar-main .col-sm-12 {
+		height:auto !important;
+	}
+	#calendar, .wc-container {
+		overflow:auto !important;
+		overflow-y: hidden !important;
+	}
+	.wc-scrollable-grid {
+		overflow:visible !important;
+		overflow-x:visible;
+		overflow-y:visible;
+	}
+	table.wc-time-slots,
+	.wc-header
+	{
+		width:300%;
+	}
+	.week-prev, .week-next {
+		position: fixed;
+		left: 0 !important;
+		top: 302px !important;
+		z-index:99;
+		margin-left:0 !important;
+	}
+	.week-next {
+		left:auto !important;
+		right:0px !important;
+	}
+	
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px){
+	.logo img {
+		width:90px;
+		height:auto;
+	}
+	.logo span {
+		font-size: 14px;
+		margin-left: 26px;
+		letter-spacing: 0px;
+		margin-top: 3px;
+	}
+	.navbar-nav > li > a,
+	.navbar-nav > li.call {
+		letter-spacing: normal;
+		font-size: 20px;
+		padding: 0px 15px;
+		line-height: 54px;
+	}
+	.navbar-nav > li.call {
+		padding-left:32px;
+	}
+}
+@media only screen and (min-width: 1280px) and (max-width: 1366px){
+}

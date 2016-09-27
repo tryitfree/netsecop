@@ -1,0 +1,83 @@
+﻿.jScrollPaneContainer {
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	height: 533px !important;
+	width: 100% !important;
+}
+.jScrollPaneTrack {
+	cursor:pointer;
+	height:100%;
+	position:absolute;
+	right:10px;
+	top:0;
+	width:15px !important;
+}
+	.jScrollPaneTrack::after {
+		content:"";
+		cursor:pointer;
+		width:1px;
+		height:100%;
+		position:absolute;
+		left:50%;
+		top:0;
+		margin-left:-0.5px;
+		background-color:#d6e76e;
+	}
+.jScrollPaneDrag {
+	cursor:pointer;
+	overflow:hidden;
+	position:absolute;
+	width:29px !important;
+	height:29px !important;
+	z-index:999;
+	margin-left:-8px;
+	background:url(../images/icons/scroll-thumb.png) no-repeat center center;
+}
+.jScrollPaneDragTop {
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+}
+.jScrollPaneDragBottom {
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+}
+a.jScrollArrowUp,
+a.jScrollArrowDown
+{
+	display:block;
+	width:15px !important;
+	height:15px !important;
+	overflow:hidden;
+	position:absolute;
+	right:0;
+	text-indent:-2000px;
+	top:0;
+	z-index:1;
+	background-color:#dad8d7;
+	
+	display:none;
+}
+a.jScrollArrowDown {
+	top:auto;
+	bottom:0;
+}
+a.jScrollArrowDown:hover {
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+}
+.scroll_pane{
+	float:left;
+	overflow:auto;
+	overflow: visible !important;
+	height: auto !important;
+	width: 95% !important;
+	position: absolute !important;
+}
+#pane{
+	height: 290px;
+}
